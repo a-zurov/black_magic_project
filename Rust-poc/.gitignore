@@ -1,0 +1,6 @@
+*~
+\#*\#
+.env
+.vscode/
+**/Cargo.lock
+**/target/

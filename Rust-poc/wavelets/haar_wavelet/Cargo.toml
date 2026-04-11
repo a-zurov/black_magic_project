@@ -1,0 +1,15 @@
+[package]
+name        = "haar_wavelet"
+version     = "0.1.0"
+edition     = "2021"
+description = "2-D Haar wavelet transform with spatial bounding-box node selection"
+
+[[bin]]
+name = "haar-wavelet"
+path = "src/main.rs"
+
+[dependencies]
+# PNG loading / saving
+image = "0.25"
+# CLI argument parsing
+clap  = { version = "4", features = ["derive"] }
