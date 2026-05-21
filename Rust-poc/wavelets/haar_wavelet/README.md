@@ -148,3 +148,8 @@ The test suite checks:
 | `roundtrip_1d` | `haar_1d_inv(haar_1d_fwd(x)) == x` |
 | `roundtrip_2d` | `haar_2d_inv(haar_2d_fwd(x)) == x` for 8×8, 3 levels |
 | `energy_preservation_2d` | Parseval relation: energy scales by `(1/4)^levels` |
+
+
+```bash
+cargo test -p cdf53 -- --nocapture
+```

@@ -1,3 +1,4 @@
 [workspace]
 resolver = "2"
-members = ["wavelets/haar_wavelet"]
+members = ["wavelets/haar_wavelet",
+           "wavelets/cdf53"]

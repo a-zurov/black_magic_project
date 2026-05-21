@@ -1,0 +1,7 @@
+[package]
+name        = "cdf53"
+version     = "0.1.0"
+edition     = "2021"
+description = "CDF-5/3"
+
+[dependencies]
