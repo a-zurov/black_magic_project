@@ -224,8 +224,48 @@ mod tests {
     }
 
     #[test]
-    fn print_coefficients() {
+    fn print_coefficients_1() {
         let mut data = vec![1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0_f32];
+        println!("input:    {:?}", data);
+        dwt53_forward(&mut data, 1);
+        println!("forward:  {:?}", data);
+        dwt53_inverse(&mut data, 1);
+        println!("restored: {:?}", data);
+    }
+
+    #[test]
+    fn print_coefficients_2() {
+        let mut data = vec![8.0, 7.0, 6.0, 5.0, 4.0, 3.0, 2.0, 1.0_f32];
+        println!("input:    {:?}", data);
+        dwt53_forward(&mut data, 1);
+        println!("forward:  {:?}", data);
+        dwt53_inverse(&mut data, 1);
+        println!("restored: {:?}", data);
+    }
+
+    #[test]
+    fn print_coefficients_3() {
+        let mut data = vec![0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0_f32];
+        println!("input:    {:?}", data);
+        dwt53_forward(&mut data, 1);
+        println!("forward:  {:?}", data);
+        dwt53_inverse(&mut data, 1);
+        println!("restored: {:?}", data);
+    }
+
+    #[test]
+    fn print_coefficients_4() {
+        let mut data = vec![-1.0, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0_f32];
+        println!("input:    {:?}", data);
+        dwt53_forward(&mut data, 1);
+        println!("forward:  {:?}", data);
+        dwt53_inverse(&mut data, 1);
+        println!("restored: {:?}", data);
+    }
+
+    #[test]
+    fn print_coefficients_5() {
+        let mut data = vec![-10.0, 0.0, 10.0, 20.0, 30.0, 40.0, 50.0, 60.0_f32];
         println!("input:    {:?}", data);
         dwt53_forward(&mut data, 1);
         println!("forward:  {:?}", data);
